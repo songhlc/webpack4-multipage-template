@@ -1,0 +1,43 @@
+{
+  "name": "webpack4-multipage-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/songhlc/webpack4-multipage-template.git",
+  "author": "windknow <songhlc@yonyou.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode development --config webpack.base.config.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "mini-css-extract-plugin": "^0.4.1",
+    "ejs-loader": "^0.3.1",
+    "html-webpack-plugin": "^3.2.0",
+    "html-withimg-loader": "^0.1.16",
+    "html-loader": "^0.5.5",
+    "less": "^3.0.2",
+    "less-loader": "^4.1.0",
+    "postcss-loader": "^2.1.4",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "knockout": "3.4.2",
+    "ycloud": "2.5.8"
+  }
+}

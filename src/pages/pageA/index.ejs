@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv ="proma" content = "no-cache"/>
+    <meta http-equiv="cache-control" content="no cache" />
+    <meta http-equiv="expires" content="0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% if (htmlWebpackPlugin.options.files.css) { %>
+    <% htmlWebpackPlugin.options.files.css.forEach(function(name){ %>
+    <link rel="stylesheet" type="text/css" href="<%= name %>"> <% }) %>
+    <% } %>
+</head>
+<body>
+    <div id="app">
+        <div class="test" data-bind="text:name"></div>
+        <y-input params="value: input"></y-input>
+        <mybox>
+            testme
+        </mybox>
+    </div>
+    <% if (htmlWebpackPlugin.options.files.js) { %>
+    <% htmlWebpackPlugin.options.files.js.forEach(function(name){ %>
+    <script type="text/javascript" src="<%= name %>"></script><% }) %>
+    <% } %>
+</body>
+</html>
